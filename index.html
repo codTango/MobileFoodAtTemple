@@ -2,40 +2,60 @@
 <html>
 	<head>
 		<title>Eat at Something</title>
-		<link rel="stylesheet" type="text/css" href="css/chrome.css">
-		<!--link rel="stylesheet" href="themes/TUfood.min.css" /-->
-		<!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" /-->
-		<!--script src="http://code.jquery.com/jquery-1.9.1.min.js"></script-->
-		<!--script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--TU theme-->
+        <link rel="stylesheet" href="themes/TUfood.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        
+        <script>
+			function exit(){
+				navigator.app.exitApp();	
+			}
+		</script>
+        
 	</head>
 	<body>
-	<header>
-		<div id="banner">
-		<img  class="bannerimage" src="img/bannertest2.gif"/>
-		</div>
-	</header>
-	<content>
-	
-		<div id="menu">
-			
-				
-			
-			
-			<div>
-				<a rel="external" href="category.html"><img class="image" src="img/menu_category.gif"/></a>
-				<a rel="external" href="index.html"><img  class="image" src="img/menu_distance.gif"/></a>
-			</div>
-			<div>
-				<a rel="external" href="index.html"><img class="image" src="img/menu_favorites.gif"/></a>
-				<a rel="external" href="index.html"><img class="image" src="img/menu_roullette.gif"/></a>
-			</div>
-			<div id="searchbox">
-				<form>
-					<input class="search" type="text" name="search"/>
-					<input id="button" class="search" type="submit" value="SEARCH FOOD TYPE">
-				</form>
-		</div>
-	
-	</content>
+    <div data-role="page">
+        <div data-role="header" data-theme="a">
+        <h1>Mobile Food At Temple</h1>
+        <a href="#menu" data-icon="gear" data-iconpos="notext"></a>
+    	<a onClick="exit();" data-icon="delete" data-iconpos="notext"></a>
+        </div><!-- header -->
+        <div data-role="panel" id="menu" data-theme="a" data-display="overlay">
+            <ul data-role="listview">
+                <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+                <li data-role="list-divider">setting</li>
+                <li><a href="#Category-type">Back</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    	</div><!--Menu panel-->
+    
+    
+        <div data-role="content" data-theme="a">
+            <div id="banner">
+                <img  class="bannerimage" src="img/bannertest2.gif"/>
+            </div>
+            <div id="menu">
+    
+                <div>
+                    <a rel="external" href="category.html"><img class="menubut" src="img/menu_category.gif"/></a>
+                    <a rel="external" href="#"><img class="menubut" src="img/menu_distance.gif"/></a>
+                </div>
+                <div>
+                    <a rel="external" href="#"><img class="menubut" src="img/menu_favorites.gif"/></a>
+                    <a rel="external" href="#"><img class="menubut" src="img/menu_roullette.gif"/></a>
+                </div>
+        
+        	</div>   <!--menu-->     
+         	<div id="searchbox">
+                <form>
+            	    <input  class="search" type="text" name="search" value="Type in food type or resturant name..."/>
+                    <input id="button" class="search" type="submit" value="SEARCH FOOD TYPE">
+                </form>
+            </div>   
+    	</div>     <!--content-->   
+    </div><!--page-->
 	</body>
 </html>

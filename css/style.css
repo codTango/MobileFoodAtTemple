@@ -56,3 +56,45 @@
 	width:100%;
 	height:250px;
 }
+
+body{
+	background-color: #A80D37;
+	text-align: center;
+	border: 2px solid white;
+	padding: 2%;
+}
+#header{
+	margin: auto;
+	width:90%;
+}
+.bannerimage{
+	width: 90%;
+}
+.image{
+	width: 30%;
+}
+input[type="text"], textarea {
+
+  background-color : ffde63; 
+  padding: 2%;
+
+}
+.menubut{
+	width:40%;
+}
+.search{
+	width: 80%;
+	color:#FFF;
+	background-color:#FFF;
+	margin: 2%;
+}
+#button{
+	height:  30px;
+	border-radius: 10px;
+	border: 5px;
+	width: 86%;
+	font-size: 1em;
+	color: blue;
+	border-color: blue;
+}
+	
