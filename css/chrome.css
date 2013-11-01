@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color: #A80D37;
+	text-align: center;
+	border: 2px solid white;
+	padding: 2%;
+}
+#header{
+	margin: auto;
+	width:90%;
+}
+.bannerimage{
+	width: 90%;
+	background-color:#A80D37;
+}
+.image{
+	width: 45%;
+	background-color:#A80D37;
+	border: 2px solid white;
+}
+input[type="text"], textarea {
+
+  background-color : ffde63; 
+  padding: 2%;
+
+}
+
+.search{
+	width: 80%;
+	color: darkblue;
+	margin: 2%;
+}
+#button{
+	height:  30px;
+	border-radius: 10px;
+	border: 5px;
+	width: 86%;
+	font-size: 1em;
+	color: blue;
+	border-color: blue;
+	background-color: ffde63;
+}
+	
